@@ -3,6 +3,11 @@
  <head>
    <meta charset="utf-8">
    <title>jQuery demo</title>
+   
+    <style>
+    a.test { font-weight: bold; }
+    </style>
+ 
  </head>
  <body>
    <a href="http://jquery.com/">jQuery</a>
@@ -14,6 +19,11 @@
          event.preventDefault();
        });
      });
+     
+     $("a").click(function(event){
+   event.preventDefault();
+   $(this).hide("slow");
+    });
    </script>
  </body>
  </html>
